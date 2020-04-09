@@ -53,7 +53,7 @@ function renderCircles(circlesGroup, newXScale, currentSelection) {
   return circlesGroup
 }
 ;(function() {
-  d3.csv("hairData.csv").then(hairData => {
+  d3.csv("data.csv").then(hairData => {
     let xLinearScale = xScale(hairData, currentSelection)
     let yLinearScale = d3
       .scaleLinear()
